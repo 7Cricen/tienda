@@ -1,0 +1,26 @@
+{% extends "../../tienda/base.html" %} 
+{% load static %} 
+{% block titulo %} Tienda Online | Panel de control {%endblock %} 
+
+{% block contenido %}
+
+<main class="pt-5">
+
+  <div class="container" style="max-width: 1000px">
+    <div class="col-12">
+      <h1 class="h2">Panel de control</h1>
+    </div>
+    <div class="col-12 d-flex justify-content-between">
+      <div>Administra tus <b>ordenes</b> e información personal</div>
+      <div><a href="{% url "cuenta:editar_detalles" %}">Cambiar información</a></div>
+    </div>
+    <hr />
+  </div>
+
+  <div class="container" style="max-width: 1000px">
+
+  </div>
+
+</main>
+
+{% endblock %}
